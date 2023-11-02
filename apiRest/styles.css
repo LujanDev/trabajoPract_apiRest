@@ -1,0 +1,94 @@
+
+html, body{
+    margin:0;
+    padding:0;
+}
+div{
+    margin-bottom:200px;
+    margin-left:40px;
+    margin-top:40px;
+}
+nav{
+    background: rgb(109, 206, 206);
+    height:90px;
+}
+header nav#navPrincipal ul{
+    padding-inline: 32px;
+    display:flex;
+    justify-content:flex-end;
+}
+nav#navPrincipal ul li{
+   list-style:none;
+   padding:30px 20px;
+}
+.wrapper{
+    max-width:1300px;
+    margin: 0 auto;
+}
+.ulContainer{
+    display:flex;
+    justify-content:space-between;
+}
+#text-home{
+    padding:30px 20px;
+    margin-left:5px;
+}
+#text-home-left{
+    display:flex;
+    justify-content:flex-start;
+}
+#imagen-logo{
+    border-radius:50%;
+    height:70px;
+    width:70px;
+    padding:10px 20px;
+}
+/*PÁGINA: LISTA DE EMPLEADOS*/
+#div-central{
+    margin: 0 auto;
+    margin-top:40px;
+    margin-left:40px;
+}
+#put, #delete, #getOne, #post, #get{
+    width: 120px;
+    height: 40px;
+    background-color:rgb(20, 196, 196);
+    border-radius:10px;
+    border: 1px solid black;
+    cursor:pointer;
+}
+#get:hover, #delete:hover, #getOne:hover, #post:hover, #get:hover{
+    background-color:rgb(108, 184, 184);
+}
+h3, #tabla_consulta_empleado, input, label, button{
+    margin-left:40px;
+}
+#get, #tabla_empleados, h3{
+    margin-left:70px;
+}
+h3, #tabla_empleados, #get, #tabla_consulta_empleado{
+    margin-top:40px;}
+table{
+    border-collapse:collapse;
+}
+th,td{
+    padding:10px;
+}
+table thead{
+    background-color:#0a3d62;
+    color:#fff;
+    border: 1px solid #fff;
+}
+table tbody{
+    background-color: #d0e9fc;
+    border: 1px solid #fff;
+}
+input, label{
+    display:block;
+    margin-bottom:10px;
+}
+input{
+    width:250px;
+    height:30px;
+    border-radius:5px;
+}

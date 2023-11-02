@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Rest Ejemplo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav id="navPrincipal">
+            <div class="wrapper">
+                <div class="ulContainer">
+                    <img id="imagen-logo" src="imagenes/Logo-lion.png">               
+                    <a href="#home" id="text-home">Home</a>
+                    <ul>
+                        <li><a href="listaEmpleados.html">Lista de empleados</a></li>
+                        <li><a href="#consulta">Consulta por Id</a></li>
+                        <li><a href="#modificar">Modificar datos</a></li>
+                        <li><a href="#crear">Crear nuevo empleado</a></li>
+                        <li><a href="#eliminar">Eliminar</a></li>
+                    </ul>   
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+    <button id="get">Traer todos</button>
+    <table id="tabla_empleados" class="display">
+        <thread>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Área de la empresa</th>
+                <th style="display:none">Domicilio</th>
+                <th style="display:none">Foto</th>
+                <th>Ver datos</th>
+            </tr>
+        </thread>
+        <tbody id="data">
+    
+        </tbody>
+    </table>
+    <div>
+        <dialog id="modal">
+            <h2>Empleado: datos completos</h2>
+            <form>
+                <label>Nombre</label>
+                <input id="name" type="text" placeholder="Nombres">
+                <label>Apellido</label>
+                <input id="lastname" type="text" placeholder="Apellido">
+                <label>Dirección</label>
+                <input id="adress" type="text">
+                <label>Foto</label>
+                <div id="imagenFormulario">
+                    <img id="foto">
+                </div>
+                <input type="text" placeholder="foto"></input>
+                <button id="btn-cerrar-modal" class="cerrarModal">Cerrar modal</button>
+            </form>
+        </dialog>
+    </div>
+    <!--DIV: CONSULTA DE UN EMPLEADO/A POR ID-->
+    <section id="consulta">
+    <div>
+    <label>Ingrese ID</label>
+    <input type="text" name="getUno" id="getOneId">
+    <button id="getOne">Consultar empleado/a</button>
+    <p id="listEmpleado"></p>
+    <table id="tabla_consulta_empleado">
+        <thread>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Área de la empresa</th>
+                <th>Domicilio</th>
+                <th>Foto</th>
+            </tr>
+        </thread>
+        <tbody id="consulta_empleado">
+        </tbody>
+    </table>
+    </div>
+    </section>
+    <!--DIV: PARA ELIMINAR UN EMPLEADO/A-->
+    <section id="eliminar">
+    <div>
+    <label>Ingrese ID</label>
+    <input type="text" name="deleteUno" id="deleteOneId">
+    <button id="delete">Eliminar empleado/a</button>
+    </div>
+    </section>
+    <!--SECTION: MÉTODO MODIFICAR DATOS DE EMPLEADO-->
+    <section id="modificar">
+    <div>
+    <!--id a Modificar-->
+    <label>Id</label>
+    <input type="text" name="putUno" id="putOneId">
+    <!--campos para los datos a modificar-->
+    <label>Nombre/s</label>
+    <input type="text" name="nombrePut" id="namePut">
+    <label>Apellido</label>
+    <input type="text" name="apellidoPut" id="lastNamePut">
+    <label>Área de trabajo</label>
+    <input type="text" name="areaPut" id="areaPut">
+    <label>Domicilio</label>
+    <input type="text" name="adressPut" id="adressPut">
+    <label>Foto</label>
+    <input type="text" name="fotoPut" id="picturePut">
+    <button id="put">Modificar uno</button>
+    </div>
+    </section>
+    <!--campos para dar de alta/crear a un empleado-->
+    <section id="crear">
+    <div>
+    <label>Nombre/s</label>
+    <input type="text" name="namePost" id="namePost">
+    <label>Apellido</label>
+    <input type="text" name="lastNamePost" id="lastNamePost">
+    <label>Área de trabajo</label>
+    <input type="text" name="areaPost" id="areaPost">
+    <label>Domicilio</label>
+    <input type="text" name="adressPost" id="adressPost">
+    <label>Foto</label>
+    <input type="text" name="fotoPost" id="picturePost">
+    <button id="post">Crear uno</button>
+    </div>
+    </section>
+    <script
+     src="https://code.jquery.com/jquery-3.7.1.js"
+     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+     crossorigin="anonymous"></script>
+    <script src="index1.js"></script>
+</body>
+</html>

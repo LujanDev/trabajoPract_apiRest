@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <header>
+            <nav id="navPrincipal">
+                <div class="wrapper">
+                    <div class="ulContainer">
+                        <img id="imagen-logo" src="imagenes/Logo-lion.png">               
+                        <a href="index.html" id="text-home">Home</a>
+                        <ul>
+                            <li><a href="listaEmpleados.html">Lista de empleados</a></li>
+                            <li><a href="index.html">Consulta por Id</a></li>
+                            <li><a href="index.html">Modificar datos</a></li>
+                            <li><a href="index.html">Crear nuevo empleado</a></li>
+                            <li><a href="index.html">Eliminar</a></li>
+                        </ul>   
+                    </div>
+                </div>
+            </nav>
+        </header>
+<div id="div-central">
+    <button id="get">Traer todos</button>
+    <h3>Lista de empleados de RoyTech</h3>
+    <table border id="tabla_empleados" class="display">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Área de la empresa</th>
+                <th style="display:none">Domicilio</th>
+                <th style="display:none">Foto</th>
+                <th>Ver datos</th>
+            </tr>
+        </thead>
+        <tbody id="data">
+    
+        </tbody>
+    </table>
+</div>
+    <div>
+        <dialog id="modal">
+            <h2>Empleado: datos completos</h2>
+            <form>
+                <label>Nombre</label>
+                <input id="name" type="text" placeholder="Nombres">
+                <label>Apellido</label>
+                <input id="lastname" type="text" placeholder="Apellido">
+                <label>Dirección</label>
+                <input id="adress" type="text">
+                <label>Foto</label>
+                <div id="imagenFormulario">
+                    <img id="foto">
+                </div>
+                <input type="text" placeholder="foto"></input>
+                <button id="btn-cerrar-modal" class="cerrarModal">Cerrar modal</button>
+            </form>
+        </dialog>
+    </div>
+    <script
+     src="https://code.jquery.com/jquery-3.7.1.js"
+     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+     crossorigin="anonymous"></script>
+    <script src="index1.js"></script>
+</body>
+</html>
